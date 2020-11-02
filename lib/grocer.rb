@@ -1,6 +1,7 @@
 require 'pry'
 
 =begin
+
 unconsolidated_cart = [
   {:item => "AVOCADO", :price => 3.00, :clearance => true },
   {:item => "AVOCADO", :price => 3.00, :clearance => true },
@@ -16,7 +17,7 @@ coupons
 =end
 
 
-#find_item_by_name_in_collection method simulates the act of adding items to your shopping cart. The method should be able to take the string name of a particular item and a collection of items like we have above. It should then iterate over the collection and check the value of :item in each nested hash. If a match is found, the method should return that entire hash. 
+#find_item_by_name_in_collection method simulates the act of adding items to your shopping cart. The method should be able to take the string name of a particular item and a collection of items (e.g. unconsolidated_cart array above). It should then iterate over the collection and check the value of :item in each nested hash. If a match is found, the method should return that entire hash. 
 
 def find_item_by_name_in_collection(name, grocery_shelf)
   index = 0 
