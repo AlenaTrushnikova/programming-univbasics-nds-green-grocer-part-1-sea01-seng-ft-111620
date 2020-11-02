@@ -30,6 +30,7 @@ def find_item_by_name_in_collection(name, grocery_shelf)
   nil
 end
 
+# This returns a new Array that represents the cart. Don't merely change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def consolidate_cart(unconsolidated_car)
   
