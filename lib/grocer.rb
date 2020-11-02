@@ -35,6 +35,19 @@ end
 def consolidate_cart(unconsolidated_cart)
   cart = []
   unconsolidated_cart.each do |sku|
-    look_up_item = find_item_by_name_in_collection()
-  
+    look_up_item = find_item_by_name_in_collection(sku[:item], cart)
+    if look_up_item
+      cart_index = 0
+      cart.each do |cart_item|
+        if cart_item[:item] === look_up_item[:item]
+          cart_item += 1
+        end
+        cart_index += 1
+      end
+    else
+      sku[:count] = 1
+      cart << sku
+    end    
+  end    
+  cart
 end
