@@ -40,7 +40,7 @@ def consolidate_cart(unconsolidated_cart)
       cart_index = 0
       cart.each do |cart_item|
         if cart_item[:item] === look_up_item[:item]
-          cart_item += 1
+          cart_item[:count] += 1
         end
         cart_index += 1
       end
