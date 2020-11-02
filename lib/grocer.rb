@@ -35,6 +35,6 @@ end
 def consolidate_cart(unconsolidated_cart)
   cart = []
   unconsolidated_cart.each do |sku|
-    find_item_by_name_in_collection()
+    look_up_item = find_item_by_name_in_collection()
   
 end
