@@ -33,7 +33,8 @@ end
 # consolidate_cart method should take in a 'cart', an array of hashes of individual items and return a new array of hashes, but with each item containing a quantity. This returns a new Array that represents the cart. Don't merely change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def consolidate_cart(unconsolidated_cart)
-  
   cart = []
+  unconsolidated_cart.each do |sku|
+    find_item_by_name_in_collection()
   
 end
