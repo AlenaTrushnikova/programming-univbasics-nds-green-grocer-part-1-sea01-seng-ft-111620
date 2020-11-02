@@ -24,7 +24,7 @@ def find_item_by_name_in_collection(name, grocery_shelf)
   grocery_shelf.each do |sku|
     if sku[:item] === name
       return sku
-      index =+ 1
+      index += 1
     end
   end
   nil
