@@ -16,6 +16,7 @@ coupons
 =end
 
 
+#find_item_by_name_in_collection method simulates the act of adding items to your shopping cart.
 
 def find_item_by_name_in_collection(name, grocery_shelf)
   index = 0 
